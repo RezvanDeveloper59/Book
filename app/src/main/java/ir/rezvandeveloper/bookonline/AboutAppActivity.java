@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatTextView;
 
 import android.os.Bundle;
-
 public class AboutAppActivity extends AppCompatActivity {
     AppCompatTextView tv_about_app;
     @Override
