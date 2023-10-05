@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MatneFarmayshatActivity"
+    android:orientation="vertical"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="با لمس هر گزینه ، آن کتاب دانلود شده ، در مسیر حافظه داخلی و در پوشه Download قرار می گیرد ."
+        android:gravity="center"
+        android:textSize="@dimen/text_size_mid"
+        android:textStyle="bold"
+        android:padding="@dimen/padding"
+        android:layout_margin="@dimen/margin"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="@dimen/padding"
+            android:layout_margin="@dimen/margin">
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnA"
+                android:text="کتاب دائره المعارف ظهور - ۱"
+                android:textSize="@dimen/btn_text_size"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnB"
+                android:text="کتاب دائره المعارف ظهور - ۲"
+                android:textSize="@dimen/btn_text_size"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnC"
+                android:text="کتاب دائره المعارف ظهور - ۳"
+                android:textSize="@dimen/btn_text_size"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnD"
+                android:text="کتاب دائره المعارف ظهور - ۴"
+                android:textSize="@dimen/btn_text_size"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnE"
+                android:text="مناسبت ها"
+                android:textSize="@dimen/btn_text_size"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnF"
+                android:text="امام شناسی و دین شناسی و منجی شناسی"
+                android:textSize="@dimen/btn_text_size"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnG"
+                android:text="تفاسیر"
+                android:textSize="@dimen/btn_text_size"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnH"
+                android:text="جبر و اختیار"
+                android:textSize="@dimen/btn_text_size"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnI"
+                android:text="حسین قتلگاه تا حسین"
+                android:textSize="@dimen/btn_text_size"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnJ"
+                android:text="ذات شناسی"
+                android:textSize="@dimen/btn_text_size"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnK"
+                android:text="شاه کلیدهای دائرة المعارف ظهور"
+                android:textSize="@dimen/btn_text_size"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnL"
+                android:text="ظهور شناسی و سازندگی های ظهوری"
+                android:textSize="@dimen/btn_text_size"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnM"
+                android:text="عدم تطابق ثبت با سند"
+                android:textSize="@dimen/btn_text_size"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnN"
+                android:text="غیبت شناسی"
+                android:textSize="@dimen/btn_text_size"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnU"
+                android:text="کتاب حاوی تضادها ( فتلقی القرآن )"
+                android:textSize="@dimen/btn_text_size"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnP"
+                android:text="فتلقی القرآن مرداد ۱۴۰۲"
+                android:textSize="@dimen/btn_text_size"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnO"
+                android:text="فایل فتلقی القرآن نهایی"
+                android:textSize="@dimen/btn_text_size"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnQ"
+                android:text="نمایه اسفند ماه"
+                android:textSize="@dimen/btn_text_size"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnR"
+                android:text="نمایه موضوعی ظهوریاب ها"
+                android:textSize="@dimen/btn_text_size"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnS"
+                android:text="پرسش و پاسخ"
+                android:textSize="@dimen/btn_text_size"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnT"
+                android:text="چشم انداز کلی"
+                android:textSize="@dimen/btn_text_size"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnV"
+                android:text="کتاب ولی شناسی و دین شناسی"
+                android:textSize="@dimen/btn_text_size"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

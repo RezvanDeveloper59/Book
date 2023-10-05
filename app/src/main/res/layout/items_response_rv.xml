@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/llItemTalkQuestionRv"
+    android:layoutDirection="ltr"
+    android:padding="@dimen/padding"
+    android:layout_margin="@dimen/margin"
+    android:textDirection="rtl">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvItemNameRv"
+        android:text="نام"
+        android:textSize="@dimen/btn_text_size_min"
+        android:scrollbarSize="5dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvItemResponseRv"
+        android:text="پاسخ"
+        android:textSize="@dimen/text_size"
+        android:scrollbarSize="5dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDateResponseRv"
+        android:textSize="@dimen/text_size_mid"
+        android:text="تاریخ و زمان"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

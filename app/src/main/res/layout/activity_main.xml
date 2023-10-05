@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="@dimen/padding"
+        android:layout_margin="@dimen/margin">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="از نسخه ۱ تا نسخه ۹۵۰ ( درس ۴۰۸ ) از کتاب دائره المعارف ظهور ، اصلاح الفبای توحید نامیده می شود ."
+            android:textSize="@dimen/text_size_mid"
+            android:gravity="center"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnTitrEslaheAlefbayeTohid"
+                    android:text="اصلاح الفبای توحید"
+                    android:textSize="@dimen/btn_text_size"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnOtherEslaheAlefbayeTohid"
+                    android:text="تدریسی دیگر از اصلاح الفبای توحید"
+                    android:textSize="@dimen/btn_text_size"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnBook"
+                    android:text="کتاب دائره المعارف ظهور"
+                    android:textSize="@dimen/btn_text_size"
+                    android:textStyle="bold"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnMotefareghe"
+                    android:text="متفرقه"
+                    android:textSize="@dimen/btn_text_size"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnTahrimeSokhan"
+                    android:text="تحریم سخن"
+                    android:textSize="@dimen/btn_text_size"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnMatneFarmayeshat"
+                    android:text="متن فرمایشات"
+                    android:textSize="@dimen/btn_text_size"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnMusic"
+                    android:text="موزیک"
+                    android:textSize="@dimen/btn_text_size"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnTalk"
+                    android:text="گفتگوها"
+                    android:textSize="@dimen/btn_text_size"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

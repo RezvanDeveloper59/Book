@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/llItemTalkQuestionRvM"
+    android:layoutDirection="ltr">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_item_rv_m"
+        android:text="name"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:scrollbarSize="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/ibMotefaregheOffItem"/>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ibMotefaregheOffItem"
+        android:src="@drawable/baseline_bookmark_24"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResponseActivity"
+    android:padding="@dimen/padding"
+    android:layout_margin="@dimen/margin"
+    android:layoutDirection="rtl">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ibBookmarkOff"
+        android:src="@drawable/baseline_bookmark_border_24"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ibBookmarkOn"
+        android:src="@drawable/baseline_bookmark_24"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:visibility="invisible"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvNumberResponse"
+        android:textSize="@dimen/text_size_mid"
+        android:text="شماره"
+        android:layout_below="@id/ibBookmarkOn"
+        android:layout_alignParentLeft="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/llTop"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layoutDirection="rtl">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvNameResponse"
+            android:textSize="@dimen/btn_text_size_min"
+            android:layoutDirection="rtl"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvSubjectResponse"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvQuestionResponse"
+            android:textSize="@dimen/text_size"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDateResponse"
+            android:text="تاریخ و زمان"
+            android:textSize="@dimen/text_size_mid"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llTop"
+        android:orientation="vertical"
+        android:layoutDirection="rtl">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rvResponses"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etSendResponse"
+            android:hint="در گفتگو شرکت کنید یا پاسخی بنویسید"
+            android:textSize="@dimen/text_size"
+            android:maxHeight="200dp"
+            android:maxLength="65535"
+            android:maxLines="10"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSendResponse"
+            android:text="ارسال"
+            android:textSize="@dimen/btn_text_size"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

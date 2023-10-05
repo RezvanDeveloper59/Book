@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewTalkingActivity"
+    android:orientation="vertical"
+    android:padding="@dimen/padding"
+    android:layout_margin="@dimen/margin">
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/etSubjectNewTalking"
+        android:hint="موضوع گفتگو یا سوال را وارد کنید"
+        android:textSize="@dimen/text_size"
+        android:gravity="start"
+        android:maxLines="1"
+        android:maxLength="100" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:id="@+id/etQuestionNewTalking"
+        android:hint="متن گفتگو یا سوال خود را وارد کنید ."
+        android:textSize="@dimen/text_size"
+        android:gravity="start"
+        android:maxLines="1000"
+        android:maxLength="65535"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/btnSentNewTalking"
+        android:text="ارسال"
+        android:textSize="@dimen/btn_text_size"/>
+
+</LinearLayout>

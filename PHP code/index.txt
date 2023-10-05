@@ -1,0 +1,38 @@
+<?php
+
+	try{
+		$pdo=new PDO('mysql:host=localhost;dbname=noskheha','root','');
+		$pdo->setAttribute(PDO::ATTR_ERRMODE, 
+		PDO::ERRMODE_EXCEPTION);
+		$pdo->exec('SET NAMES "utf8"');
+	}
+	catch (PDOException $e){
+		$output='Unable to connect to the database server: '.$e->getMessage();
+		include 'output.html.php';
+		exit();
+	}
+			
+	$dir    = 'C:\xampp\htdocs\ReadFileName\archive';
+    $files1 = scandir($dir);
+    //$files2 = scandir($dir, SCANDIR_SORT_DESCENDING);
+
+    print_r($files1);
+    //print_r($files2);
+    $count = sizeof($files1);
+    
+    for($i = 2; $i < $count ; $i++){
+//        echo $files1[$i];
+		try{
+			$sql="insert into noskheha set 
+			name=$files1[$i],
+			link=$files1[$i]";
+			$s=$pdo->prepare($sql);
+			$s->execute();
+		}//try
+		catch(PDOException $e){
+			$error='Error adding submitted poem: '.$e->getMessage();
+			include 'error.html.php';
+			exit();
+		}
+			
+    }

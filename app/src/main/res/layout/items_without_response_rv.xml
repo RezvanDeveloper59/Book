@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/llItemWithoutResponseRv"
+    android:layoutDirection="ltr">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvItemSubjectWithoutResponseRv"
+        android:text="موضوع"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:padding="@dimen/padding"
+        android:layout_margin="@dimen/margin"
+        android:scrollbarSize="5dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvItemWithoutResponseRv"
+        android:text="سوال"
+        android:textSize="20dp"
+        android:padding="@dimen/padding"
+        android:layout_margin="@dimen/margin"
+        android:scrollbarSize="5dp"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TalkActivity"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnTalkQuestion"
+            android:text="گفتگوها یا پرسش ها"
+            android:textSize="@dimen/btn_text_size"
+            android:padding="@dimen/padding"
+            android:layout_margin="@dimen/margin"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnNewTalk"
+            android:text="گفتگو یا پرسش سوال جدید"
+            android:textSize="@dimen/btn_text_size"
+            android:padding="@dimen/padding"
+            android:layout_margin="@dimen/margin"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnTalkWithoutResponse"
+            android:text="گفتگوها یا سوالات بی پاسخ"
+            android:textSize="@dimen/btn_text_size"
+            android:padding="@dimen/padding"
+            android:layout_margin="@dimen/margin"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnMyTalk"
+            android:text="گفتگوها یا سوالات من"
+            android:textSize="@dimen/btn_text_size"
+            android:padding="@dimen/padding"
+            android:layout_margin="@dimen/margin"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnMyFavorite"
+            android:text="نشانه گذاری شده های من"
+            android:textSize="@dimen/btn_text_size"
+            android:padding="@dimen/padding"
+            android:layout_margin="@dimen/margin"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

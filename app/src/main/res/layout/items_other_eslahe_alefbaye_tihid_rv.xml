@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/llItemRvOtherEslaheAlefbayeTohid"
+    android:layoutDirection="ltr">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_item_rvOtherEslaheAlefbayeTohid"
+        android:text="name"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:scrollbarSize="5dp"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

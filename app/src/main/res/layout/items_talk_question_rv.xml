@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/rlItemTalkQuestionRv"
+    android:layoutDirection="ltr"
+    android:padding="@dimen/padding"
+    android:layout_margin="@dimen/margin">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvNumberTalk"
+        android:text="شماره"
+        android:textSize="@dimen/btn_text_size_min"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvItemNameRv"
+        android:text="نام"
+        android:textSize="@dimen/btn_text_size_min"
+        android:scrollbarSize="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvItemSubjectRv"
+        android:text="موضوع"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold"
+        android:scrollbarSize="5dp"
+        android:layout_below="@id/tvItemNameRv"
+        android:layout_alignParentRight="true"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvItemQuestionRv"
+        android:text="گفتگو یا سوال"
+        android:textSize="@dimen/text_size"
+        android:scrollbarSize="5dp"
+        android:layout_below="@id/tvItemSubjectRv"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

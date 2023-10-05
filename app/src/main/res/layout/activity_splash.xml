@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:id="@+id/ll_main_splash"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SplashActivity"
+    tools:ignore="InvalidId"
+    android:background="@drawable/todd">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SplashActivity">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_kashef_splash"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textStyle="bold"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_refresh_splash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="تلاش مجدد"
+            android:gravity="center"
+            android:textColor="#FF0000FF"
+            android:background="#FF00FF00"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:padding="5dp"
+            android:layout_margin="5dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_download_splash"
+            android:layout_below="@id/tv_kashef_splash"
+            android:layout_margin="@dimen/margin"
+            android:padding="@dimen/padding"
+            android:text="دانلود مستقیم"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/BLUE"
+            android:background="@color/BLUE_BUTTON"
+            android:visibility="gone"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/ib_download_myket_splash"
+            android:layout_below="@id/btn_download_splash"
+            android:layout_margin="@dimen/margin"
+            android:padding="@dimen/padding"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/myket"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

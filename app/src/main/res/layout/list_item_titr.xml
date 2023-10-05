@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/llTitr"
+    android:orientation="vertical"
+    android:layoutDirection="rtl">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvLesson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="درس"
+            android:textSize="18dp"
+            android:padding="@dimen/padding"
+            android:layout_margin="@dimen/margin"
+            android:layout_alignParentRight="true"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="شماره"
+            android:textSize="18dp"
+            android:padding="@dimen/padding"
+            android:layout_margin="@dimen/margin"
+            android:layout_alignParentLeft="true"/>
+
+    </RelativeLayout>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="تیتر"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/padding"
+        android:layout_margin="@dimen/margin"/>
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding"
+    tools:context=".BookActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_source"
+        android:text="منابع هر درس"
+        android:textSize="@dimen/btn_text_size"
+        android:visibility="gone"/>
+
+    <androidx.appcompat.widget.SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sv_main"
+        android:text="شماره نسخه"
+        android:hint="شماره نسخه"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvLastLessonBook"
+        android:textSize="@dimen/btn_text_size"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/btnPlayLastBook"
+            android:text="پخش آخرین مطالعه"
+            android:textSize="@dimen/btn_text_size"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/btnPlayNextBook"
+            android:text="پخش درس بعد"
+            android:textSize="@dimen/btn_text_size"/>
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:id="@+id/ibBookmarkedBook"
+            android:src="@drawable/baseline_bookmark_24"
+            android:padding="5dp"/>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnChanceBook"
+        android:text="پخش شانسی یک درس"
+        android:textSize="@dimen/btn_text_size"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnTavasol"
+        android:text="برخی تدریس و توسل ها"
+        android:textSize="@dimen/btn_text_size"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/rv_names"
+        android:scrollbarSize="59dp"
+        android:scrollbars="vertical"
+        android:scrollbarFadeDuration="2590"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_refresh_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="تلاش مجدد"
+        android:gravity="center"
+        android:textColor="#FF0000FF"
+        android:background="#FF00FF00"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:visibility="gone"/>
+</androidx.appcompat.widget.LinearLayoutCompat>
