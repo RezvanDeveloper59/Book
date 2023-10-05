@@ -2,7 +2,7 @@
 
 	define('DB_HOST', 'localhost');
 	define('DB_USER', 'accezukn_accez');
-	define('DB_PASS', 'umj67eiE3-U3');
+	define('DB_PASS', '');
 	define('DB_NAME', 'accezukn_noskheha');
 
 	class DbOperation{
