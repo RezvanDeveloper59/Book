@@ -12,7 +12,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.app.ProgressDialog;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toast;
@@ -35,6 +34,9 @@ import java.util.Calendar;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import ir.rezvandeveloper.bookonline.adapter.AdapterResponseRV;
+import ir.rezvandeveloper.bookonline.model.ModelResponseRv;
 
 public class ResponseActivity extends AppCompatActivity {
 

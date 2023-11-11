@@ -1,5 +1,5 @@
 <?php
-    $dir    = '../accez_folder/+989156247445/archive';
+    $dir    = '../noskheha/archive';
     $files1 = scandir($dir);
     //$files2 = scandir($dir, SCANDIR_SORT_DESCENDING);
 

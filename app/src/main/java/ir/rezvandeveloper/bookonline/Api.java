@@ -18,6 +18,9 @@ public class Api {
     public static final String MOTEFAREGHE_URL = "https://rezvandeveloper.ir/noskheha/motefareghe/";
     public static final String LINK_1To408_URL = "https://rezvandeveloper.ir/noskheha/1to408/";
     public static final String MUSIC_LINK_URL = "https://rezvandeveloper.ir/noskheha/music/";
+    public static final String PODCAST_URL = "https://rezvandeveloper.ir/noskheha/padkast/";
+    public static final String HALGHEHAYE_MAFGHOODE_URL = "https://rezvandeveloper.ir/noskheha/halghehaye_mafghoode/";
+    public static final String TARKE_MOADELATE_TEKRARI_URL = "https://rezvandeveloper.ir/noskheha/tarke_moadelate_tekrari/";
     public static final String LINK_MATNE_FARMAYESHAT_URL = "https://rezvandeveloper.ir/noskheha/matne_farmayeshat/";
     public static final String URL_QUERY = ROOT_URL + "query";
     public static final String URL_QUERY_TADRIS_VA_TAVASOL = ROOT_URL + "query_tadris_va_tavasol";
@@ -40,6 +43,9 @@ public class Api {
     public static final String URL_WITHOUT_RESPONSE = ROOT_URL + "without_response";
     public static final String URL_GET_MY_REQUEST = ROOT_URL + "get_my_question";
     public static final String URL_GET_MY_FAVORITE = ROOT_URL + "get_my_favorite";
+    public static final String URL_GET_ALL_LIST_PODCAST = ROOT_URL + "get_all_list_padkast";
+    public static final String URL_GET_ALL_LIST__HALGHEHAYE_MAFGHOODE = ROOT_URL + "get_all_list_halghehaye_mafghoode";
+    public static final String URL_GET_ALL_LIST__TARKE_MOADELATE_TEKRARI = ROOT_URL + "get_all_list_tarke_moadelate_tekrari";
 
     public static SharedPreferences sharedPreferences;
 

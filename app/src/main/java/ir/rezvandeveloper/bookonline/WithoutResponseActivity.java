@@ -7,7 +7,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;
-import android.util.Log;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -21,6 +20,9 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import ir.rezvandeveloper.bookonline.adapter.AdapterWithoutResponseRV;
+import ir.rezvandeveloper.bookonline.model.ModelWithoutResponseRv;
 
 public class WithoutResponseActivity extends AppCompatActivity {
 

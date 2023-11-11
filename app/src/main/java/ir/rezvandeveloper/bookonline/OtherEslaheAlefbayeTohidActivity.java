@@ -27,6 +27,11 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
+import ir.rezvandeveloper.bookonline.adapter.AdapterOtherEslaheAlefbayeTohidRV;
+import ir.rezvandeveloper.bookonline.bookmarked.BookmarkedOtherEslaheAlefbayeTohidActivity;
+import ir.rezvandeveloper.bookonline.model.ModelBookRv;
+import ir.rezvandeveloper.bookonline.player.PlayOtherEslaheAlefbayeTohidActivity;
+
 public class OtherEslaheAlefbayeTohidActivity extends AppCompatActivity {
     ImageButton ibBookmarkedEAT;
     AppCompatButton btnPlayLastEAT, btnPlayNextEAT, btnChanceEAT;

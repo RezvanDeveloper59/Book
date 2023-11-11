@@ -10,8 +10,8 @@ android {
         applicationId "ir.rezvandeveloper.bookonline"
         minSdk 21
         targetSdk 34
-        versionCode 25
-        versionName "7.0"
+        versionCode 26
+        versionName "7.1"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 

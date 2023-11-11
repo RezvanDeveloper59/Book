@@ -34,6 +34,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
+import ir.rezvandeveloper.bookonline.about.SourceActivity;
+import ir.rezvandeveloper.bookonline.adapter.AdapterBookRV;
+import ir.rezvandeveloper.bookonline.bookmarked.BookmarkedBookActivity;
+import ir.rezvandeveloper.bookonline.model.ModelBookRv;
+import ir.rezvandeveloper.bookonline.player.PlayBookActivity;
+
 public class BookActivity extends AppCompatActivity {
 
     AppCompatTextView tvLastLessonBook;
@@ -59,7 +65,7 @@ public class BookActivity extends AppCompatActivity {
         btn_source.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(BookActivity.this,SourceActivity.class);
+                Intent intent = new Intent(BookActivity.this, SourceActivity.class);
                 startActivity(intent);
             }
         });
@@ -189,6 +195,7 @@ public class BookActivity extends AppCompatActivity {
     }
 
     private void GetListNames() {
+        listAllNames.clear();
         tv_refresh_main.setVisibility(View.GONE);
         ProgressDialog progressDialog;
         progressDialog = new ProgressDialog(BookActivity.this);

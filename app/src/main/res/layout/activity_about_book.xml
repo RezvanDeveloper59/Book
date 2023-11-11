@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="@dimen/padding"
-    tools:context=".AboutBookActivity">
+    tools:context=".about.AboutBookActivity">
 
     <ImageView
         android:id="@+id/iv_pic_kashef"

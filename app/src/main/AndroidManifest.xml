@@ -18,25 +18,52 @@
         tools:replace="android:allowBackup"
         tools:targetApi="31">
         <activity
-            android:name=".BookmarkedOtherEslaheAlefbayeTohidActivity"
+            android:name=".player.PlayTarkeMoadelateTekrariActivity"
             android:exported="false" />
         <activity
-            android:name=".PlayOtherEslaheAlefbayeTohidActivity"
+            android:name=".player.PlayHalghehayeMafghoodeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".player.PlayPodcastActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bookmarked.BookmarkedTarkeMoadelateTekrariActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bookmarked.BookmarkedHalghehayeMafghoodeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bookmarked.BookmarkedPodcastActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TarkeMoadelateTekrariActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HalghehayeMafghoodeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PodcastActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bookmarked.BookmarkedOtherEslaheAlefbayeTohidActivity"
+            android:exported="false" />
+        <activity
+            android:name=".player.PlayOtherEslaheAlefbayeTohidActivity"
             android:exported="false" />
         <activity
             android:name=".OtherEslaheAlefbayeTohidActivity"
             android:exported="false" />
         <activity
-            android:name=".BookmarkedTahrimeSokhanActivity"
+            android:name=".bookmarked.BookmarkedTahrimeSokhanActivity"
             android:exported="false" />
         <activity
-            android:name=".BookmarkedMotefaregheActivity"
+            android:name=".bookmarked.BookmarkedMotefaregheActivity"
             android:exported="false" />
         <activity
-            android:name=".BookmarkedBookActivity"
+            android:name=".bookmarked.BookmarkedBookActivity"
             android:exported="false" />
         <activity
-            android:name=".PlayMusicActivity"
+            android:name=".player.PlayMusicActivity"
             android:exported="false" />
         <activity
             android:name=".MusicActivity"
@@ -45,13 +72,13 @@
             android:name=".MatneFarmayshatActivity"
             android:exported="false" />
         <activity
-            android:name=".PlayMotefaregheActivity"
+            android:name=".player.PlayMotefaregheActivity"
             android:exported="false" />
         <activity
             android:name=".MotefaregheActivity"
             android:exported="false" />
         <activity
-            android:name=".PlayTahrimeSokhanActivity"
+            android:name=".player.PlayTahrimeSokhanActivity"
             android:exported="false" />
         <activity
             android:name=".TahrimeSokhanActivity"
@@ -84,7 +111,7 @@
             android:name=".TalkActivity"
             android:exported="false" />
         <activity
-            android:name=".PlayEslaheAlefbayeTohidActivity"
+            android:name=".player.PlayEslaheAlefbayeTohidActivity"
             android:exported="false" />
         <activity
             android:name=".EslaheAlefbayeTohidActivity"
@@ -93,10 +120,10 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".AboutAppActivity"
+            android:name=".about.AboutAppActivity"
             android:exported="false" />
         <activity
-            android:name=".SourceActivity"
+            android:name=".about.SourceActivity"
             android:exported="false" />
         <activity
             android:name=".SplashActivity"
@@ -108,13 +135,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".PlayBookActivity"
+            android:name=".player.PlayBookActivity"
             android:exported="false" />
         <activity
             android:name=".BookActivity"
             android:exported="false" />
         <activity
-            android:name=".AboutBookActivity"
+            android:name=".about.AboutBookActivity"
             android:exported="false" />
     </application>
 

@@ -50,7 +50,7 @@
 			//return $response;
 		}
 		
-		//############################################################################
+		//##################################### پر کردن دیتابیس #######################################
 		
 		function AllBook(){
 			include 'db.php';
@@ -226,6 +226,90 @@
 			}
 		}
 		
+		function Padkast(){
+			include 'db.php';
+			try{
+				$sql = 'delete from padkast';
+				$s = $pdo -> prepare($sql);
+				$s -> execute();
+				
+				$sql = 'ALTER TABLE padkast AUTO_INCREMENT = 1';
+				$s = $pdo -> prepare($sql);
+				$s -> execute();
+			}
+			catch(PDOException $e){
+				$error = 'Error Padkast';
+				exit();
+			}
+			$dir    = '../noskheha/padkast';
+			$names  = scandir($dir);
+			
+			$count  = sizeof($names);
+    
+			for($i = 2; $i < $count ; $i++){
+		
+				$stmt = $this -> connection -> prepare("INSERT INTO padkast (name)VALUES(?)");
+				$stmt -> bind_param("s",$names[$i]);
+				$stmt -> execute();
+			}
+		}
+		
+		function HalghehayeMafghoode(){
+			include 'db.php';
+			try{
+				$sql = 'delete from halghehaye_mafghoode';
+				$s = $pdo -> prepare($sql);
+				$s -> execute();
+				
+				$sql = 'ALTER TABLE halghehaye_mafghoode AUTO_INCREMENT = 1';
+				$s = $pdo -> prepare($sql);
+				$s -> execute();
+			}
+			catch(PDOException $e){
+				$error = 'Error halghehaye_mafghoode';
+				exit();
+			}
+			$dir    = '../noskheha/halghehaye_mafghoode';
+			$names  = scandir($dir);
+			
+			$count  = sizeof($names);
+    
+			for($i = 2; $i < $count ; $i++){
+		
+				$stmt = $this -> connection -> prepare("INSERT INTO halghehaye_mafghoode (name)VALUES(?)");
+				$stmt -> bind_param("s",$names[$i]);
+				$stmt -> execute();
+			}
+		}
+		
+		function TarkeMoadelateTekrari(){
+			include 'db.php';
+			try{
+				$sql = 'delete from tarke_moadelate_tekrari';
+				$s = $pdo -> prepare($sql);
+				$s -> execute();
+				
+				$sql = 'ALTER TABLE tarke_moadelate_tekrari AUTO_INCREMENT = 1';
+				$s = $pdo -> prepare($sql);
+				$s -> execute();
+			}
+			catch(PDOException $e){
+				$error = 'Error tarke_moadelate_tekrari';
+				exit();
+			}
+			$dir    = '../noskheha/tarke_moadelate_tekrari';
+			$names  = scandir($dir);
+			
+			$count  = sizeof($names);
+    
+			for($i = 2; $i < $count ; $i++){
+		
+				$stmt = $this -> connection -> prepare("INSERT INTO tarke_moadelate_tekrari (name)VALUES(?)");
+				$stmt -> bind_param("s",$names[$i]);
+				$stmt -> execute();
+			}
+		}
+		
 		//##########################################################################
 		
 		function GetList(){
@@ -286,6 +370,48 @@
 		
 		function GetAllListMusic(){
 			$stmt = $this -> connection -> prepare("SELECT * FROM music");
+			$stmt -> execute();
+			$stmt -> bind_result($id,$name);
+			$items = array();
+			while($stmt->fetch()){
+				$item = array();
+				$item['id'] = $id;
+				$item['name'] = $name;
+				array_push($items,$item);
+			}
+			return $items;
+		}
+		
+		function GetAllListPadkast(){
+			$stmt = $this -> connection -> prepare("SELECT * FROM padkast");
+			$stmt -> execute();
+			$stmt -> bind_result($id,$name);
+			$items = array();
+			while($stmt->fetch()){
+				$item = array();
+				$item['id'] = $id;
+				$item['name'] = $name;
+				array_push($items,$item);
+			}
+			return $items;
+		}
+		
+		function GetAllListHalghehayeMafghoode(){
+			$stmt = $this -> connection -> prepare("SELECT * FROM halghehaye_mafghoode");
+			$stmt -> execute();
+			$stmt -> bind_result($id,$name);
+			$items = array();
+			while($stmt->fetch()){
+				$item = array();
+				$item['id'] = $id;
+				$item['name'] = $name;
+				array_push($items,$item);
+			}
+			return $items;
+		}
+		
+		function GetAllListTarkeMoadelateTekrari(){
+			$stmt = $this -> connection -> prepare("SELECT * FROM tarke_moadelate_tekrari");
 			$stmt -> execute();
 			$stmt -> bind_result($id,$name);
 			$items = array();

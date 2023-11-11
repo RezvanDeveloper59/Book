@@ -23,6 +23,9 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
+import ir.rezvandeveloper.bookonline.adapter.AdapterTalkQuestionRV;
+import ir.rezvandeveloper.bookonline.model.ModelTalkQuestionRv;
+
 public class TalkQuestionActivity extends AppCompatActivity {
 
     List<ModelTalkQuestionRv> modelTalkQuestionRvs = new ArrayList<>();

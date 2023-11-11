@@ -1,12 +1,8 @@
 package ir.rezvandeveloper.bookonline;
 
-import android.app.AlertDialog;
 import android.app.ProgressDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toast;
@@ -30,6 +26,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
+
+import ir.rezvandeveloper.bookonline.bookmarked.BookmarkedMotefaregheActivity;
+import ir.rezvandeveloper.bookonline.model.ModelBookRv;
+import ir.rezvandeveloper.bookonline.player.PlayMotefaregheActivity;
+import ir.rezvandeveloper.bookonline.adapter.AdapterMotefaregheRV;
 
 public class MotefaregheActivity extends AppCompatActivity {
 
@@ -108,7 +109,7 @@ public class MotefaregheActivity extends AppCompatActivity {
                 length = random.nextInt(length);
                 Intent intent = new Intent(MotefaregheActivity.this,PlayMotefaregheActivity.class);
                 Bundle bundle = new Bundle();
-                bundle.putString("name",listAllNamesMotefareghe.get(length).getName());
+                bundle.putString("name", listAllNamesMotefareghe.get(length).getName());
                 intent.putExtras(bundle);
                 startActivity(intent);
             }
@@ -135,6 +136,7 @@ public class MotefaregheActivity extends AppCompatActivity {
     }
 
     private void GetListNames() {
+        listAllNamesMotefareghe.clear();
         tv_refresh_main_motefareghe.setVisibility(View.GONE);
         ProgressDialog progressDialog;
         progressDialog = new ProgressDialog(MotefaregheActivity.this);

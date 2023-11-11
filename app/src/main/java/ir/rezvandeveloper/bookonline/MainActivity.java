@@ -16,14 +16,17 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-import com.google.android.material.button.MaterialButton;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import ir.rezvandeveloper.bookonline.about.AboutAppActivity;
+import ir.rezvandeveloper.bookonline.about.AboutBookActivity;
+import ir.rezvandeveloper.bookonline.about.SourceActivity;
+
 public class MainActivity extends AppCompatActivity {
 
-    AppCompatButton btnTitrEslaheAlefbayeTohid,btnOtherEslaheAlefbayeTohid,btnBook,btnTahrimeSokhan,btnMotefareghe,btnMatneFarmayeshat,btnMusic,btnTalk;
+    AppCompatButton btnTitrEslaheAlefbayeTohid,btnOtherEslaheAlefbayeTohid,btnBook,btnTahrimeSokhan,btnMotefareghe,btnMatneFarmayeshat,btnMusic,btnTalk,btnPodcast,btnHalghehayeMafghoode,btnTarkeMoadelateTekrari;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,7 +72,33 @@ public class MainActivity extends AppCompatActivity {
         btnMotefareghe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,MotefaregheActivity.class);
+                Intent intent = new Intent(MainActivity.this, MotefaregheActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnPodcast.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, PodcastActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+        btnHalghehayeMafghoode.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, HalghehayeMafghoodeActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+        btnTarkeMoadelateTekrari.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, TarkeMoadelateTekrariActivity.class);
                 startActivity(intent);
             }
         });
@@ -147,7 +176,7 @@ public class MainActivity extends AppCompatActivity {
         menu.add("منابع").setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem menuItem) {
-                Intent intent = new Intent(MainActivity.this,SourceActivity.class);
+                Intent intent = new Intent(MainActivity.this, SourceActivity.class);
                 startActivity(intent);
                 return false;
             }
@@ -155,7 +184,7 @@ public class MainActivity extends AppCompatActivity {
         menu.add("درباره اپلیکیشن").setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem menuItem) {
-                Intent intent = new Intent(MainActivity.this,AboutAppActivity.class);
+                Intent intent = new Intent(MainActivity.this, AboutAppActivity.class);
                 startActivity(intent);
                 return false;
             }
@@ -179,6 +208,9 @@ public class MainActivity extends AppCompatActivity {
         btnMatneFarmayeshat = findViewById(R.id.btnMatneFarmayeshat);
         btnMusic = findViewById(R.id.btnMusic);
         btnTalk = findViewById(R.id.btnTalk);
+        btnPodcast = findViewById(R.id.btnPodcast);
+        btnHalghehayeMafghoode = findViewById(R.id.btnHalghehayeMafghoode);
+        btnTarkeMoadelateTekrari = findViewById(R.id.btnTarkeMoadelateTekrari);
 
         Api.sharedPreferences = getSharedPreferences("PREFERS", Context.MODE_PRIVATE);
 

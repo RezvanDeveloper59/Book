@@ -25,6 +25,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import ir.rezvandeveloper.bookonline.adapter.AdapterTalkQuestionRV;
+import ir.rezvandeveloper.bookonline.model.ModelTalkQuestionRv;
+
 public class MyFavoriteActivity extends AppCompatActivity {
 
     RecyclerView rvMyFavorite;

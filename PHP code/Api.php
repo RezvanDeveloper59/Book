@@ -63,6 +63,21 @@
 				$db = new DbOperation();
 				$response ['music'] = $db -> Music();
 			break;
+			
+			case 'padkast':
+				$db = new DbOperation();
+				$response ['padkast'] = $db -> Padkast();
+			break;
+			
+			case 'halghehaye_mafghoode':
+				$db = new DbOperation();
+				$response ['halghehaye_mafghoode'] = $db -> HalghehayeMafghoode();
+			break;
+			
+			case 'tarke_moadelate_tekrari':
+				$db = new DbOperation();
+				$response ['tarke_moadelate_tekrari'] = $db -> TarkeMoadelateTekrari();
+			break;
 			//############################################################
 			
 			// نمایش لیست کامل
@@ -89,6 +104,21 @@
 			case 'get_all_list_music':
 				$db = new DbOperation();
 				$response = $db -> GetAllListMusic();
+			break;
+			
+			case 'get_all_list_padkast':
+				$db = new DbOperation();
+				$response = $db -> GetAllListPadkast();
+			break;
+			
+			case 'get_all_list_halghehaye_mafghoode':
+				$db = new DbOperation();
+				$response = $db -> GetAllListHalghehayeMafghoode();
+			break;
+			
+			case 'get_all_list_tarke_moadelate_tekrari':
+				$db = new DbOperation();
+				$response = $db -> GetAllListTarkeMoadelateTekrari();
 			break;
 			
 			// query

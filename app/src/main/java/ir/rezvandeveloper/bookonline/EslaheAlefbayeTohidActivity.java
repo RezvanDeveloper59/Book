@@ -7,12 +7,16 @@ import androidx.appcompat.widget.AppCompatTextView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import ir.rezvandeveloper.bookonline.DB.Database;
+import ir.rezvandeveloper.bookonline.DB.ModelDB;
+import ir.rezvandeveloper.bookonline.adapter.AdapterEslaheAlefbayeTohidLV;
+import ir.rezvandeveloper.bookonline.player.PlayEslaheAlefbayeTohidActivity;
 
 public class EslaheAlefbayeTohidActivity extends AppCompatActivity {
 
