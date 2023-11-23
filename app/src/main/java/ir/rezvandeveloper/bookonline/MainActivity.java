@@ -141,6 +141,7 @@ public class MainActivity extends AppCompatActivity {
                     String sBtnSedayeFaratarAzFaryad = jsonObject.getJSONArray("setting").getJSONObject(11).getString("b");
                     String sBtnHalghehayeMafghoode = jsonObject.getJSONArray("setting").getJSONObject(12).getString("b");
                     String sBtnTarkeMoadelateTekrari = jsonObject.getJSONArray("setting").getJSONObject(13).getString("b");
+                    String sBtnMatneFarmayeshat = jsonObject.getJSONArray("setting").getJSONObject(14).getString("b");
 
                     if (sBtnTalk.equals("visible")) {
                         btnTalk.setVisibility(View.VISIBLE);
@@ -176,6 +177,12 @@ public class MainActivity extends AppCompatActivity {
                         btnTarkeMoadelateTekrari.setVisibility(View.VISIBLE);
                     }else {
                         btnTarkeMoadelateTekrari.setVisibility(View.GONE);
+                    }
+
+                    if (sBtnMatneFarmayeshat.equals("visible")) {
+                        btnMatneFarmayeshat.setVisibility(View.VISIBLE);
+                    }else {
+                        btnMatneFarmayeshat.setVisibility(View.GONE);
                     }
 
                 } catch (JSONException e) {
