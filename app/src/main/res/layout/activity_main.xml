@@ -55,7 +55,8 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/btnMotefareghe"
                     android:text="متفرقه"
-                    android:textSize="@dimen/btn_text_size"/>
+                    android:textSize="@dimen/btn_text_size"
+                    android:visibility="gone"/>
                 <androidx.appcompat.widget.AppCompatButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -67,30 +68,33 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/btnPodcast"
                     android:text="فراتر از صدای فریاد"
-                    android:textSize="@dimen/btn_text_size"/>
+                    android:textSize="@dimen/btn_text_size"
+                    android:visibility="gone"/>
                 <androidx.appcompat.widget.AppCompatButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/btnHalghehayeMafghoode"
                     android:text="حلقه های مفقوده"
-                    android:textSize="@dimen/btn_text_size"/>
+                    android:textSize="@dimen/btn_text_size"
+                    android:visibility="gone"/>
                 <androidx.appcompat.widget.AppCompatButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/btnTarkeMoadelateTekrari"
-                    android:text="ترک معادلات دتکراری"
-                    android:textSize="@dimen/btn_text_size"/>
+                    android:text="ترک معادلات تکراری"
+                    android:textSize="@dimen/btn_text_size"
+                    android:visibility="gone"/>
                 <androidx.appcompat.widget.AppCompatButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/btnMatneFarmayeshat"
-                    android:text="متن فرمایشات"
+                    android:text="متن های کتاب"
                     android:textSize="@dimen/btn_text_size"/>
                 <androidx.appcompat.widget.AppCompatButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/btnMusic"
-                    android:text="موزیک"
+                    android:text="سروده ها"
                     android:textSize="@dimen/btn_text_size"/>
                 <androidx.appcompat.widget.AppCompatButton
                     android:layout_width="match_parent"

@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:layoutDirection="ltr"
     tools:context=".player.PlayPodcastActivity"
-    android:background="@drawable/podcast">
+    android:background="@drawable/faryad">
 
     <androidx.appcompat.widget.AppCompatTextView
         android:layout_width="wrap_content"

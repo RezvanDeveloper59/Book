@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
         cast();
 
-        visibilityBtnTalkBtnTahrimeSokhan();
+        visibilityBtnTalkBtnTahrimeSokhanBtnMotefaregheBtnSBtnHBtnT();
 
         btnTitrEslaheAlefbayeTohid.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -128,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void visibilityBtnTalkBtnTahrimeSokhan(){
+    private void visibilityBtnTalkBtnTahrimeSokhanBtnMotefaregheBtnSBtnHBtnT(){
         StringRequest stringRequest = new StringRequest(Request.Method.POST, Api.URL_GET_SETTING, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -137,6 +137,10 @@ public class MainActivity extends AppCompatActivity {
 
                     String sBtnTalk = jsonObject.getJSONArray("setting").getJSONObject(8).getString("b");
                     String sBtnTahrimeSokhan = jsonObject.getJSONArray("setting").getJSONObject(9).getString("b");
+                    String sBtnMotefareghe = jsonObject.getJSONArray("setting").getJSONObject(10).getString("b");
+                    String sBtnSedayeFaratarAzFaryad = jsonObject.getJSONArray("setting").getJSONObject(11).getString("b");
+                    String sBtnHalghehayeMafghoode = jsonObject.getJSONArray("setting").getJSONObject(12).getString("b");
+                    String sBtnTarkeMoadelateTekrari = jsonObject.getJSONArray("setting").getJSONObject(13).getString("b");
 
                     if (sBtnTalk.equals("visible")) {
                         btnTalk.setVisibility(View.VISIBLE);
@@ -149,6 +153,31 @@ public class MainActivity extends AppCompatActivity {
                     }else {
                         btnTahrimeSokhan.setVisibility(View.GONE);
                     }
+
+                    if (sBtnMotefareghe.equals("visible")) {
+                        btnMotefareghe.setVisibility(View.VISIBLE);
+                    }else {
+                        btnMotefareghe.setVisibility(View.GONE);
+                    }
+
+                    if (sBtnSedayeFaratarAzFaryad.equals("visible")) {
+                        btnPodcast.setVisibility(View.VISIBLE);
+                    }else {
+                        btnPodcast.setVisibility(View.GONE);
+                    }
+
+                    if (sBtnHalghehayeMafghoode.equals("visible")) {
+                        btnHalghehayeMafghoode.setVisibility(View.VISIBLE);
+                    }else {
+                        btnHalghehayeMafghoode.setVisibility(View.GONE);
+                    }
+
+                    if (sBtnTarkeMoadelateTekrari.equals("visible")) {
+                        btnTarkeMoadelateTekrari.setVisibility(View.VISIBLE);
+                    }else {
+                        btnTarkeMoadelateTekrari.setVisibility(View.GONE);
+                    }
+
                 } catch (JSONException e) {
                     throw new RuntimeException(e);
                 }

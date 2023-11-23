@@ -34,6 +34,19 @@
 			break;
 			
 			//################## write to badabase #######################
+			case 'all':
+				$db = new DbOperation();
+				$response ['all_book'] = $db -> AllBook();
+				$response ['eslahe_alefbaye_tohid'] = $db -> EslaheAlefbayeTohid();
+				$response ['tahrime_sokhan'] = $db -> TahrimeSokhan();
+				//$response ['motefareghe'] = $db -> Motefareghe();
+				$response ['matne_farmayeshat'] = $db -> MatneFarmayeshat();
+				$response ['music'] = $db -> Music();
+				$response ['padkast'] = $db -> Padkast();
+				$response ['halghehaye_mafghoode'] = $db -> HalghehayeMafghoode();
+				$response ['tarke_moadelate_tekrari'] = $db -> TarkeMoadelateTekrari();
+			break;
+			
 			case 'all_book':
 				$db = new DbOperation();
 				$response ['all_book'] = $db -> AllBook();
